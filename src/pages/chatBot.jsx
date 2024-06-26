@@ -8,13 +8,16 @@ const Chatbot = () => {
     const userMessage = { sender: "user", text: input };
     setMessages([...messages, userMessage]);
 
-    const response = await fetch("http://localhost:3001/chat", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ message: input }),
-    });
+    const response = await fetch(
+      "https://webinar-backend-1.onrender.com/chat",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ message: input }),
+      }
+    );
 
     const data = await response.json();
     const botMessage = { sender: "bot", text: data.response };
