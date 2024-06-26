@@ -4,6 +4,7 @@ const Card = ({ cv, name, description, id }) => {
   return (
     <div className="max-w-xs rounded overflow-hidden shadow-lg m-4">
       <img
+        alt="avatar"
         className="w-full"
         src={"https://avatars.githubusercontent.com/u/" + id}
       />

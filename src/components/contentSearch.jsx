@@ -3,11 +3,9 @@ import React, { useState, useEffect } from "react";
 const ContentSearch = () => {
   const [users, setUsers] = useState([]);
   const [profile, setProfile] = useState([]);
-  const [search, setSearch] = useState("");
 
   const URL = "https://sheetdb.io/api/v1/h0t9n6iouagce";
   const PROFILE = "https://sheetdb.io/api/v1/oe7v8boqg5ik1";
-  const API = "https://avatars.githubusercontent.com/u/103466145";
 
   const showData = async () => {
     const response = await fetch(URL);
@@ -15,6 +13,8 @@ const ContentSearch = () => {
     console.log(data);
     setUsers(data);
   };
+
+  console.log(profile);
 
   useEffect(() => {
     showData();
@@ -60,6 +60,7 @@ const ContentSearch = () => {
             <tr>
               <td>
                 <img
+                  alt="avatar"
                   className="rounded-full w-[80px]"
                   src={"https://avatars.githubusercontent.com/u/" + user.ID}
                 />

@@ -15,10 +15,6 @@ function LandingPage() {
           WEELOG
         </h2>
       </section>
-
-      <section className="section2">
-        <h2 id="text2"></h2>
-      </section>
     </div>
   );
 }

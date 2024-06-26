@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import IaCard from "./iaCard";
 import Header from "./header";
 import RegisterCard from "./registerCard";

@@ -4,7 +4,7 @@ import iaImage from "../../assets/ia.jpg";
 const RegisterCard = () => {
   return (
     <div className="max-w-xs rounded overflow-hidden shadow-lg m-4">
-      <img className="w-full" src={iaImage} />
+      <img alt="register" className="w-full" src={iaImage} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">Registro Multi-Step</div>
         <p className="text-gray-700 text-base">
