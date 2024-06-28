@@ -24,7 +24,7 @@ function WebinarForm() {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://webinar-backend-1.onrender.com/test", state);
+      await axios.post("https://webinar-backend-two.vercel.app/test", state);
     } catch (err) {
       console.log(err);
     }
