@@ -8,6 +8,7 @@ const Chatbot = () => {
     const userMessage = { sender: "user", text: input };
     setMessages([...messages, userMessage]);
 
+    //contacto con el servidor
     const response = await fetch(
       "https://webinar-backend-two.vercel.app/chat",
       {
