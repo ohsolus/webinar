@@ -9,7 +9,7 @@ const Chatbot = () => {
     setMessages([...messages, userMessage]);
 
     const response = await fetch(
-      "https://webinar-backend-1.onrender.com/chat",
+      "https://webinar-backend-two.vercel.app/chat",
       {
         method: "POST",
         headers: {
